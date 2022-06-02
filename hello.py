@@ -1,3 +1,3 @@
-print("Hello World!")
-print("Python script")
+print("Hello World")
+
 
