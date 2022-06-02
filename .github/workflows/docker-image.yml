@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag akshaykamath69/python-docker:latest
+      run: docker build . --file hello.py --tag akshaykamath69/python-docker:latest
     - name: Push the Docker image
       run: docker login -u akshaykamath69 -p ${{ secrets.DOCKER_SECRET }} && docker push akshaykamath69/python-docker:latest
