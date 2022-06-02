@@ -1,10 +1,6 @@
-FROM ubuntu:latest
-RUN apt update
-RUN apt install python3 -y
+FROM python:3.8
+ADD hello.py
 
-WORKDIR /home/ubuntu/akshay
 
-COPY hello.py ./
-
-CMD ["python3", "./hello.py]
+CMD ["python", "./hello.py]
 
